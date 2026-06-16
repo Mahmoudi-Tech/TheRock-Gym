@@ -305,6 +305,52 @@
             border: 2px solid #ff6b00;
         }
 
+        /* ===== NAVBAR ===== */
+.navbar{
+    background: #111;
+    padding: 15px 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,.2);
+}
+
+.nav-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo-img{
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo-text{
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo-small{
+    color: #ff3b3b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.logo-main{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+        
         /* ===== APP DOWNLOAD ===== */
         .app-download { padding: 100px 0; background: #0a0a0a; }
         .app-wrapper {
@@ -462,13 +508,20 @@
 </head>
 <body>
 
-    <!-- ===== NAVBAR ===== -->
-    <nav>
-        <div class="container nav-inner">
-            <div class="logo">
-                <img src="logo.png" alt="The Rock Gym Logo" class="logo-img">
-                <span>GYM</span> ROCK THE
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+    <div class="container nav-inner">
+
+        <a href="#" class="logo">
+            <img src="logo.png" alt="The Rock Gym Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-small">THE</span>
+                <span class="logo-main">ROCK GYM</span>
             </div>
+        </a>
+
+    </div>
+</nav>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#">الرئيسية</a></li>
                 <li><a href="#about">عن النادي</a></li>
