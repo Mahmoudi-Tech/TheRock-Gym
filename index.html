@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>⚡ The Rock Gym | الصالة الرياضية</title>
+    
+    <!-- Favicon (أيقونة المتصفح) -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23000'/%3E%3Ctext x='50' y='55' text-anchor='middle' fill='%23fff' font-size='40' font-weight='bold' font-family='Arial'%3ERG%3C/text%3E%3C/svg%3E">
+    
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;900&family=Oswald:wght@300;500;700&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
         /* ---------- RESET ---------- */
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -38,8 +43,9 @@
             justify-content: space-between;
             align-items: center;
         }
-        .logo { font-size: 32px; font-weight: 900; font-family: 'Oswald', sans-serif; letter-spacing: 1px; }
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 28px; font-weight: 900; font-family: 'Oswald', sans-serif; letter-spacing: 1px; }
         .logo span { color: #ff6b00; }
+        .logo-img { width: 50px; height: 50px; border-radius: 50%; }
         .nav-links { display: flex; gap: 25px; }
         .nav-links a { font-weight: 600; font-size: 15px; transition: 0.3s; }
         .nav-links a:hover { color: #ff6b00; }
@@ -174,7 +180,10 @@
     <!-- ========== NAVBAR ========== -->
     <nav>
         <div class="container nav-inner">
-            <div class="logo">THE <span>ROCK</span> GYM</div>
+            <div class="logo">
+                <img src="https://i.imgur.com/your-logo.png" alt="The Rock Gym Logo" class="logo-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2248%22 fill=%22%23000%22 stroke=%22%23ff6b00%22 stroke-width=%222%22/%3E%3Ctext x=%2250%22 y=%2255%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-size=%2216%22 font-weight=%22bold%22 font-family=%22Arial%22%3ERG%3C/text%3E%3C/svg%3E'>
+                THE <span>ROCK</span> GYM
+            </div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#">الرئيسية</a></li>
                 <li><a href="#about">عن النادي</a></li>
@@ -273,7 +282,7 @@
             <div class="trainers-grid">
                 <div class="trainer-card">
                     <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=400&auto=format&fit=crop" alt="مدرب">
-                    <h4>أحمد محمود</h4>
+                    <h4>عبد الله</h4>
                     <p>مدرب قوة وتضخيم</p>
                 </div>
                 <div class="trainer-card">
@@ -328,11 +337,11 @@
                 <p>تحكم في رحلتك الرياضية من هاتفك. تتبع التمارين، احصل على خطط تغذية، وتنافس مع أصدقائك.</p>
                 <div class="app-buttons">
                     <a href="#" class="app-btn coming-soon"><i class="fab fa-apple"></i><div><small>تحميل من</small><strong>App Store</strong></div></a>
-                    <a href="#" class="app-btn"><i class="fab fa-google-play"></i><div><small>تحميل من</small><strong>Google Play</strong></div></a>
+                    <a href="https://github.com/Mahmoudi-Tech/TheRock-Gym/releases/download/TheRock-Gym/The-Rock-Gym.apk" class="app-btn" target="_blank"><i class="fab fa-android"></i><div><small>تحميل من</small><strong>Google Play</strong></div></a>
                 </div>
             </div>
             <div class="app-image">
-                <img src="https://i.imgur.com/mockup.png" alt="تطبيق The Rock Gym" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%231a1a1a%22/%3E%3Ctext x=%22200%22 y=%22200%22 text-anchor=%22middle%22 fill=%22%23ff6b00%22 font-size=%2240%22 font-family=%22Arial%22%3E📱 THE ROCK GYM%3C/text%3E%3C/svg%3E'">
+                <img src="https://i.imgur.com/mockup.png" alt="تطبيق The Rock Gym" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect width=%22400%22 height=%22400%22 fill=%22%231a1a1a%22/%3E%3Ctext x=%22200%22 y=%22200%22 text-anchor=%22middle%22 fill=%22%23ff6b00%22 font-size=%2240%22 font-family=%22Arial%22%3E📱 THE ROCK GYM%3C/text%3E%3C/svg%3E'>
             </div>
         </div>
     </section>
@@ -359,7 +368,8 @@
                     <h4>اتصل بنا</h4>
                     <ul>
                         <li><i class="fas fa-map-marker-alt"></i> القاهرة - مدينة نصر</li>
-                        <li><i class="fas fa-phone"></i> +20 123 456 7890</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:01094840481" style="color:#888;">01094840481</a></li>
+                        <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/201094840481" target="_blank" style="color:#888;">واتساب: 01094840481</a></li>
                         <li><i class="fas fa-envelope"></i> info@therockgym.com</li>
                     </ul>
                 </div>
