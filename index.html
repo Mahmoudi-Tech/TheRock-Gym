@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rock Gym - تحميل التطبيق</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Cairo', 'Segoe UI', sans-serif; background: #0b0b0b; color: white; direction: rtl; }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: #111;
+            border-bottom: 2px solid #222;
+        }
+        .logo { font-size: 28px; font-weight: 900; letter-spacing: 2px; }
+        .logo span { color: #ff6600; }
+        .nav-links a { color: white; margin: 0 15px; text-decoration: none; font-weight: 600; }
+        .nav-btn { background: #ff6600; padding: 10px 20px; border-radius: 30px; color: black; font-weight: bold; text-decoration: none; }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 50px;
+            background: radial-gradient(circle at 30% 30%, #1a1a1a, #000);
+            min-height: 80vh;
+        }
+        .hero-text { width: 50%; }
+        .hero-text h1 { font-size: 60px; text-transform: uppercase; line-height: 1.1; margin-bottom: 20px; }
+        .hero-text h1 span { color: #ff6600; }
+        .hero-text p { font-size: 18px; color: #ccc; margin-bottom: 30px; max-width: 500px; line-height: 1.6; }
+        .download-buttons { display: flex; gap: 15px; }
+        .download-btn {
+            background: white;
+            color: black;
+            padding: 12px 25px;
+            border-radius: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .download-btn img { width: 25px; }
+
+        .hero-image { width: 45%; display: flex; justify-content: center; }
+        .hero-image img { width: 100%; max-width: 400px; filter: drop-shadow(0 0 20px #ff6600); border-radius: 20px; }
+
+        /* Features */
+        .features {
+            padding: 80px 50px;
+            text-align: center;
+            background: #0f0f0f;
+        }
+        .features h2 { font-size: 40px; margin-bottom: 50px; }
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+        .feature-card {
+            background: #1a1a1a;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .feature-card:hover { border-color: #ff6600; transform: translateY(-5px); }
+        .feature-card h3 { font-size: 22px; margin-bottom: 10px; color: #ff6600; }
+        .feature-card p { color: #aaa; }
+
+        /* CTA Section */
+        .cta {
+            background: #000;
+            padding: 80px 20px;
+            text-align: center;
+            border-top: 3px solid #ff6600;
+        }
+        .cta h1 { font-size: 48px; margin-bottom: 20px; }
+        .cta-btn-large {
+            background: #ff6600;
+            padding: 20px 50px;
+            border-radius: 50px;
+            font-size: 24px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #222;
+        }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; padding: 40px 20px; }
+            .hero-text { width: 100%; }
+            .hero-image { width: 100%; margin-top: 30px; }
+            .download-buttons { justify-content: center; }
+            nav { flex-direction: column; gap: 15px; }
+            .nav-links { display: flex; flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+    <!-- خط عربي جميل من Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">THE <span>ROCK</span> GYM</div>
+        <div class="nav-links">
+            <a href="#">الرئيسية</a>
+            <a href="#">المميزات</a>
+            <a href="#">عن التطبيق</a>
+            <a href="#">اتصل بنا</a>
+        </div>
+        <a href="#" class="nav-btn">تحميل التطبيق</a>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>تمرّن <span>كالصخر</span></h1>
+            <p>احصل على خطط التمرين الأكثر احترافية، جداول التغذية، وتتبع التقدم مع تطبيق The Rock Gym الرسمي. ابدأ رحلتك الآن.</p>
+            <div class="download-buttons">
+                <a href="#" class="download-btn">📱 متجر Apple</a>
+                <a href="#" class="download-btn">📱 متجر Google</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- ضع هنا صورة الهاتف أو اللوجو -->
+            <div style="background:#222; width:300px; height:300px; border-radius:20px; display:flex; align-items:center; justify-content:center; border:2px solid #ff6600;">
+                <span style="font-size:40px; font-weight:900;">💪</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <h2>لماذا تختار The Rock Gym؟</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>🏋️ تمارين مخصصة</h3>
+                <p>خطط علمية تناسب جميع المستويات من مبتدئ إلى محترف.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🥗 تغذية متكاملة</h3>
+                <p>جداول وجبات وحساب السعرات الحرارية بكل سهولة.</p>
+            </div>
+            <div class="feature-card">
+                <h3>📊 تتبع التقدم</h3>
+                <p>راجع تطور تمارينك، وزنك، وقياسات جسمك.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🏆 مجتمع متحمس</h3>
+                <p>تنافس مع أصدقائك وحافظ على الحماس والتحفيز.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h1>هل أنت مستعد لتحقيق أهدافك؟</h1>
+        <a href="#" class="cta-btn-large">حمّل الآن</a>
+        <p style="margin-top:20px; color:#ccc;">متوفر على iOS و Android</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 The Rock Gym. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
